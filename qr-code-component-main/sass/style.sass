@@ -1,0 +1,45 @@
+@use 'mixins'
+@use 'variables'
+
+* 
+    padding: 0 
+    margin: 0 
+    box-sizing: border-box 
+
+body
+    background-color: variables.$bg-color 
+    font-family: 'Outfit'
+    min-height: 100vh 
+    display: flex 
+    align-items: center 
+    font-size: 15px  
+
+.container 
+    max-width: 349px 
+    margin: 0 auto 
+
+    &-qr-code 
+        margin: 0 1rem 
+        border-radius: 17px 
+        padding: 16px 
+        background-color: variables.$bg-color-container 
+        text-align: center 
+
+    &-qr-code-img 
+        border-radius: 12px 
+        width: 100% 
+
+.text 
+    padding: 22px 10px 
+    text-align: center 
+
+    h2
+        color: variables.$primary-text-color 
+        padding-bottom: 15px 
+        font-weight: 700 
+        text-align: center 
+    p 
+        color: variables.$secundary-text-color
+        font-weight: 400 
+        text-align: center 
+
